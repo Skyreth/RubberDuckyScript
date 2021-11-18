@@ -8,7 +8,7 @@ void setup()
   Keyboard.end();
 }
 
-void typeKey(int key)
+void runscript()
 {
   Keyboard.press(KEY_LEFT_GUI);
   delay(500);
@@ -38,11 +38,6 @@ void typeKey(int key)
   Keyboard.print("RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters");
   Keyboard.press(KEY_INSERT);
   Keyboard.end();
-}
-
-
-void runscript() {
-
 }
 
 void loop() {
