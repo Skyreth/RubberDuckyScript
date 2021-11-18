@@ -27,7 +27,11 @@ void typeKey(int key)
   Keyboard.press(KEY_INSERT);
   delay(500);
 
-  Keyboard.print("reg add \"HCKU:\\Control Panel\\Desktop\\\" /v Wallpaper /t REG_SZ /d C:/Temp/background.jpg");
+  Keyboard.print("OUI");
+  Keyboard.press(KEY_INSERT);
+  delay(500);
+
+  Keyboard.print("reg add \"HKEY_CURRENT_USER\\Control Panel\\Desktop\\\" /v Wallpaper /t REG_SZ /d");
   Keyboard.press(KEY_INSERT);
   delay(500);
 
