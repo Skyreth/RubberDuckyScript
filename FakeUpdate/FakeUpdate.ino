@@ -10,22 +10,20 @@ void setup() {
 void processKey(int key) {
   Keyboard.press(key);
   delay(500);
-  Keyboard.release(key);
+  Keyboard.releaseAll();
 }
 
 void runscript() {
   Keyboard.press(KEY_LEFT_GUI);
-  delay(500);
   Keyboard.press('r');
+  delay(500);
   Keyboard.releaseAll();
+  
+  Keyboard.print("msedge https://fakeupdate.net/win10ue/");
+  processKey(KEY_RETURN);
 
-  Keyboard.print("cmd");
-  processKey(KEY_INSERT);
-
-  Keyboard.print("start msedge https://fakeupdate.net/win10ue/");
-  processKey(KEY_INSERT);
-
-  processKey(KEY_F10);
+  processKey(KEY_F11);
+  
 }
 
 void loop() {
