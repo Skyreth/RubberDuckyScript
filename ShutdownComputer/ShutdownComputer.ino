@@ -16,15 +16,15 @@ void processKey(int key) {
 
 void runscript() {
   Keyboard.press(KEY_LEFT_GUI);
-  delay(500);
   Keyboard.press('r');
+  delay(500);
   Keyboard.releaseAll();
 
   Keyboard.print("cmd");
-  processKey(KEY_INSERT);
+  processKey(KEY_RETURN);
 
   Keyboard.print("shutdown /s");
-  processKey(KEY_INSERT);
+  processKey(KEY_RETURN);
 }
 
 void loop() {

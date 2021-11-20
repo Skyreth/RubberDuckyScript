@@ -10,13 +10,13 @@ void setup() {
 void processKey(int key) {
   Keyboard.press(key);
   delay(500);
-  Keyboard.release(key);
+  Keyboard.releaseAll();
 }
 
 void openSearchWindow() {
   Keyboard.press(KEY_LEFT_GUI);
-  delay(500);
   Keyboard.press('r');
+  delay(500);
   Keyboard.releaseAll();
 }
 
@@ -30,13 +30,12 @@ void runscript() {
   processKey(KEY_INSERT);
 
   Keyboard.press(KEY_LEFT_CTRL);
-  delay(500);
   Keyboard.press('c');
+  delay(500);
   Keyboard.releaseAll();
 
-  Keyboard.press(KEY_LEFT_CTRL);
   Keyboard.press(KEY_LEFT_ALT);
-  Keyboard.press(KEY_DELETE);
+  Keyboard.press(KEY_F4);
   Keyboard.releaseAll();
 
   openSearchWindow();
